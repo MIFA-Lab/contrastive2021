@@ -2,9 +2,10 @@
 
 ## Paper
 
-[Towards the Generalization of Contrastive Self-Supervised Learning](https://arxiv.org/abs/2111.00743)
+"[Towards the Generalization of Contrastive Self-Supervised Learning](https://arxiv.org/abs/2111.00743)",
+Weiran Huang, Mingyang Yi and Xuyang Zhao, arXiv:2111.00743, 2021.
 
-The most critical argument we made in our paper is that the quality of data augmentation exhibits great impact on the quality of contrastive-learned encoder. The data augmentation with sharper intra-class concentration enables the model to have better generalization on downstream tasks. We verify it through a variety of experiments in this repo. 
+The most critical argument we made in our paper is that the **quality of data augmentation** exhibits great impact on the quality of contrastive-learned encoder. The data augmentation with sharper intra-class concentration enables the model to have better generalization on downstream tasks. We verify it through a variety of experiments in this repository. 
 
 ## Supported methods
 
@@ -68,10 +69,12 @@ Example: `python main.py --model=simclr --epoch=800 --batch=512 --round=3 --augs
 
 This code is based on:
 
-- [GitHub - IgorSusmelj/barlowtwins: Implementation of Barlow Twins paper](https://github.com/IgorSusmelj/barlowtwins)
-- [lightly/imagenette_benchmark.py at master · lightly-ai/lightly · GitHub](https://github.com/lightly-ai/lightly/blob/master/docs/source/getting_started/benchmarks/imagenette_benchmark.py)
+- [IgorSusmelj/barlowtwins](https://github.com/IgorSusmelj/barlowtwins)
+- [lightly/imagenette_benchmark.py](https://github.com/lightly-ai/lightly/blob/master/docs/source/getting_started/benchmarks/imagenette_benchmark.py)
 
 ## Citation
+
+If you find our work useful in your research, please consider citing:
 
 ```
 @misc{huang2021generalization,
@@ -79,8 +82,7 @@ This code is based on:
       author={Weiran Huang and Mingyang Yi and Xuyang Zhao},
       year={2021},
       eprint={2111.00743},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG}
+      archivePrefix={arXiv}
 }
 ```
 
