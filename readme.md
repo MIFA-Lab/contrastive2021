@@ -3,7 +3,7 @@
 ## Paper
 
 "[Towards the Generalization of Contrastive Self-Supervised Learning](https://arxiv.org/abs/2111.00743)",
-Weiran Huang, Mingyang Yi and Xuyang Zhao, arXiv:2111.00743, 2021.
+[Weiran Huang](https://www.weiranhuang.com), Mingyang Yi and Xuyang Zhao, arXiv:2111.00743, 2021.
 
 The most critical argument we made in our paper is that the **quality of data augmentation** exhibits great impact on the quality of contrastive-learned encoder. The data augmentation with sharper intra-class concentration enables the model to have better generalization on downstream tasks. We verify it through a variety of experiments in this repository. 
 
