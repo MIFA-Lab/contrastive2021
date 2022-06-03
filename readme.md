@@ -2,8 +2,7 @@
 
 ## Description
 
-"[Towards the Generalization of Contrastive Self-Supervised Learning](https://arxiv.org/abs/2111.00743)",
-[Weiran Huang](https://www.weiranhuang.com), Mingyang Yi and Xuyang Zhao, arXiv:2111.00743, 2021.
+[Weiran Huang](https://www.weiranhuang.com), Mingyang Yi and Xuyang Zhao, "[Towards the Generalization of Contrastive Self-Supervised Learning](https://arxiv.org/abs/2111.00743)", arXiv:2111.00743, 2021.
 
 This repository is used to study how data augmentations affect the performance of contrastive self-supervised learning algorithms.
 
@@ -26,7 +25,7 @@ This repository is used to study how data augmentations affect the performance o
 ```bash
 python -m venv venv                 # create a virtual environment named venv
 source venv/bin/activate            # activate the environment
-pip install -r requirement.txt      # install the dependencies
+pip install -r requirements.txt      # install the dependencies
 ```
 
 Code is tested in the following environment:
