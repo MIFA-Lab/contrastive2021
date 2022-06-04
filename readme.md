@@ -1,9 +1,9 @@
 # Contrastive Self-Supervised Learning on CIFAR-10
 
     
-![Platform](https://img.shields.io/badge/platform-pytorch-blue)
-![Top Language](https://img.shields.io/github/languages/top/huang-research-group/contrastive2021)
-![Latest Release](https://img.shields.io/github/v/release/huang-research-group/contrastive2021)
+[![Platform](https://img.shields.io/badge/platform-pytorch-blue)](https://pytorch.org/get-started/locally/)
+[![Top Language](https://img.shields.io/github/languages/top/huang-research-group/contrastive2021)](https://github.com/huang-research-group/contrastive2021/search?l=python)
+[![Latest Release](https://img.shields.io/github/v/release/huang-research-group/contrastive2021)](https://github.com/huang-research-group/contrastive2021/releases)
 
 ## Description
 
