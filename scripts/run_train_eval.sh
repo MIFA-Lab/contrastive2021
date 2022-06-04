@@ -6,7 +6,8 @@ num_runs=1
 timestamp=`date '+%s'`
 
 # preparation
-cd ../
+SHELL_FOLDER=$(cd "$(dirname "$0")";pwd)
+cd ${SHELL_FOLDER}/../
 if [ ! -d "./results" ]; then
     mkdir ./results
 fi
