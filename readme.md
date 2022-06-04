@@ -1,10 +1,15 @@
 # Contrastive Self-Supervised Learning on CIFAR-10
 
+    
+![Platform](https://img.shields.io/badge/platform-pytorch-blue)
+![Top Language](https://img.shields.io/github/languages/top/huang-research-group/contrastive2021)
+![Latest Release](https://img.shields.io/github/v/release/huang-research-group/contrastive2021)
+
 ## Description
 
 [Weiran Huang](https://www.weiranhuang.com), Mingyang Yi and Xuyang Zhao, "[Towards the Generalization of Contrastive Self-Supervised Learning](https://arxiv.org/abs/2111.00743)", arXiv:2111.00743, 2021.
 
-This repository is used to study how data augmentations affect the performance of contrastive self-supervised learning algorithms.
+This repository is used to verify how data augmentations will affect the performance of contrastive self-supervised learning algorithms.
 
 ## Supported Models
 
@@ -25,7 +30,7 @@ This repository is used to study how data augmentations affect the performance o
 ```bash
 python -m venv venv                 # create a virtual environment named venv
 source venv/bin/activate            # activate the environment
-pip install -r requirements.txt      # install the dependencies
+pip install -r requirements.txt     # install the dependencies
 ```
 
 Code is tested in the following environment:
@@ -57,7 +62,7 @@ KNN evaluation protocol. Code from [here](https://colab.research.google.com/gith
 
 ### Richer data augmentations result in better performance
 
-Example: `python train_eval.py --model=simclr --epoch=800 --augs=abcde --num_runs=3`
+Usage: `python train_eval.py --model=simclr --epoch=800 --augs=abcde --num_runs=3`
 
 | (a)  | (b)  | (c)  | (d)  | (e)  |    SimCLR    | Barlow Twins |
 | :--: | :--: | :--: | :--: | :--: | :----------: | :----------: |
@@ -69,7 +74,7 @@ Example: `python train_eval.py --model=simclr --epoch=800 --augs=abcde --num_run
 
 ### Stronger data augmentations result in better performance
 
-Example: `python train_eval.py --model=twins --epoch=800 --augs=color --color_strength=0.5 --num_runs=3`
+Usage: `python train_eval.py --model=twins --epoch=800 --augs=color --color_strength=0.5 --num_runs=3`
 
 | Color Distortion Strength |    SimCLR    | Barlow Twins |
 | :-----------------------: | :----------: | :----------: |
