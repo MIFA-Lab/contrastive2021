@@ -151,7 +151,7 @@ class MocoModel(BenchmarkModule):
     def configure_optimizers(self):
         optim = torch.optim.SGD(
             self.resnet_moco.parameters(),
-            lr=6e-2,
+            lr=0.08,
             momentum=0.9,
             weight_decay=5e-4
         )
