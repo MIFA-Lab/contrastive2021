@@ -185,7 +185,7 @@ class SimSiamModel(BenchmarkModule):
         return loss
 
     def configure_optimizers(self):
-        optim = torch.optim.SGD(self.resnet_simsiam.parameters(), lr=6e-2,
+        optim = torch.optim.SGD(self.resnet_simsiam.parameters(), lr=0.05,
                                 momentum=0.9, weight_decay=5e-4)
         scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(
             optim, self.epochs)
