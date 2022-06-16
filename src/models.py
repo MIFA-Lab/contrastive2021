@@ -243,28 +243,8 @@ class BarlowTwinsModel(BenchmarkModule):
         # self.log('train_loss_ssl', loss)
         return loss
 
-    # learning rate warm-up
-    def optimizer_steps(self,
-                        epoch=None,
-                        batch_idx=None,
-                        optimizer=None,
-                        optimizer_idx=None,
-                        optimizer_closure=None,
-                        on_tpu=None,
-                        using_native_amp=None,
-                        using_lbfgs=None):
-        # 120 steps ~ 1 epoch
-        if self.trainer.global_step < 1000:
-            lr_scale = min(1., float(self.trainer.global_step + 1) / 1000.)
-            for pg in optimizer.param_groups:
-                pg['lr'] = lr_scale * 1e-3
-
-        # update params
-        optimizer.step()
-        optimizer.zero_grad()
-
     def configure_optimizers(self):
-        optim = torch.optim.SGD(self.resnet_simsiam.parameters(), lr=1e-3,
+        optim = torch.optim.SGD(self.resnet_simsiam.parameters(), lr=0.11,
                                 momentum=0.9, weight_decay=5e-4)
         scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(
             optim, self.epochs)
