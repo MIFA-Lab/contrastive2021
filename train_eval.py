@@ -194,6 +194,8 @@ def main():
     gpu_usage = np.asarray(gpu_memory_usage).mean()
     model = args.model + '_epoch_' + str(args.epochs) + '_batch_' + \
         str(args.batch_size) + '_augs_' + args.augs
+    if args.augs == 'color':
+        model = model + '_strength_' + str(args.color_strength)
 
     print(f'{model}: {100*mean:.2f} +- {100*std:.2f}%, GPU used: {gpu_usage / (1024.0**3):.1f} GByte', flush=True)
 
